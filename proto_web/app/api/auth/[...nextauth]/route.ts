@@ -1,5 +1,6 @@
 
 import NextAuth from "next-auth";
+import { verify } from '@node-rs/bcrypt';
 import GoogleProvider from "next-auth/providers/google";
 const handler = NextAuth({
   providers: [
@@ -9,51 +10,24 @@ const handler = NextAuth({
       httpOptions: {
         timeout: 40000,
       },
-      authorization: {
-        params: {
-          prompt: "consent",
-          access_type: "offline",
-          response_type: "code",
-        },
-      },
+     
     }),
   ],
-  callbacks: {
-    async jwt({ token, account, user }) {
-      if (account) {
-        const res = await fetch(
-          `${process.env.NEXT_PUBLIC_BACKEND_URL}/auth/login`,
-          {
-            method: "POST",
-            headers: {
-              "Authorization": `Bearer ${account?.id_token}`,
-            },
-          }
-        );
-        const resParsed = await res.json();
-        token = Object.assign({}, token, {
-          id_token: account.id_token,
-        });
-        token = Object.assign({}, token, {
-          myToken: resParsed.authToken,
-        });
-      }
-
-      return token;
-    },
-    async session({ session, token }) {
-      if (session) {
-        session = Object.assign({}, session, {
-          id_token: token.id_token,
-        });
-        session = Object.assign({}, session, {
-          authToken: token.myToken,
-        });
-      }
-      return session;
-    },
-  },
+  
 });
 
-export { handler as GET, handler as POST, handler };
+export { handler as GET, handler as POST };
 
+
+
+declare module "next-auth" {
+  interface Session {
+    accessToken?: string
+  }
+}
+
+declare module "next-auth/jwt" {
+  interface JWT {
+    accessToken?: string
+  }
+}
