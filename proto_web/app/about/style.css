@@ -1,13 +1,15 @@
 /* General Page Styles */
 body {
     background-color: #e3e3e3;
-    font-family: 'Poppins', sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
     display: grid;
     align-items: center;
     justify-content: center;
+    border-left: 50px solid #333;
+    border-right: 50px solid #333;
   }
   
   /* About Page Container */
@@ -37,17 +39,16 @@ body {
   }
 
   .blurb {
-    max-width: 600px;   
-    width: 80%;      
-    text-align: center; 
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
-    align-self: center;
+    max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
   }
   
   /* Headings */
   h1 {
     font-size: 2.5rem;
+    text-decoration: underline;
     margin-bottom: 1rem;
     color: #4a4a4a;
   }
