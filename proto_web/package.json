@@ -9,10 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/css": "^11.13.4",
+    "@syncfusion/ej2-data": "^27.1.52",
+    "@syncfusion/ej2-react-diagrams": "^27.1.53",
+    "@xyflow/react": "^12.3.2",
     "next": "14.2.15",
     "next-auth": "^4.24.8",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-draggable": "^4.4.6",
+    "react-easy-diagram": "^0.11.3",
     "react-router-dom": "^6.27.0"
   },
   "devDependencies": {
