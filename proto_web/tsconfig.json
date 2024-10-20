@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["@emotion/react"],
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,

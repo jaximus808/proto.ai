@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/css": "^11.13.4",
+    "@emotion/styled": "^11.13.0",
     "@node-rs/bcrypt": "^1.10.5",
     "next": "14.2.15",
     "next-auth": "^4.24.8",
@@ -20,6 +23,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "babel-plugin-styled-components": "^2.1.4",
     "eslint": "^8",
     "eslint-config-next": "14.2.15",
     "postcss": "^8",
