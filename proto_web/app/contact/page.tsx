@@ -21,9 +21,9 @@ const About: React.FC = () => {
       <div className='wrapper'>
         <h2>Email us</h2>
         <br></br>
-        <a href='j.k.poentis@wustl.edu'>Contact Jaxon at j.k.poentis@wustl.edu</a>
+        <a href="mailto:j.k.poentis@wustl.edu">Contact Jaxon at j.k.poentis@wustl.edu</a>
         <p></p>
-        <a href='a.s.luo@wustl.edu'>Contact Andria at a.s.luo@wustl.edu</a>
+        <a href="mailto:a.s.luo@wustl.edu">Contact Andria at a.s.luo@wustl.edu</a>
         <br></br>
         </div>
       <section className="team">
