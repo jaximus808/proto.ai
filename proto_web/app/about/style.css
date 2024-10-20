@@ -8,8 +8,8 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
-    border-left: 50px solid #333;
-    border-right: 50px solid #333;
+    border-left: 70px solid #333;
+    border-right: 70px solid #333;
   }
   
   /* About Page Container */
@@ -63,7 +63,7 @@ body {
   p {
     border-radius: 30px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     line-height: 1.8;
     margin-bottom: 2rem;
     color: #666;
