@@ -27,11 +27,7 @@ export default function Login() {
   return (
     <div style={{ textAlign: 'center', marginTop: '20%' }}>
       <h1>Login</h1>
-      <form action={googleLogin}>
-        <button className="bg-pink-400 text-white p-1 rounded-md m-1 text-lg" type="submit" name="action" value="google">
-                    Sign In With Google
-        </button>
-      </form>
+
       <button onClick={Login} style={{
         backgroundColor: '#4285F4',  // Google Blue
         color: 'white',
